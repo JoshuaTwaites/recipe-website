@@ -1,0 +1,46 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minMax(20rem, 1fr));
+    grid-gap: 3rem;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card p {
+    text-align: center;
+    padding: 1rem;
+}
+
+p {
+    text-align: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        margin-bottom: -5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin-bottom: -6rem;
+    }
+}
